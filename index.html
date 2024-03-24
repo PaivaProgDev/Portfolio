@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/png" href="./assets/img/icons/favicon1.png" />
+    <link rel="shortcut icon" href="./assets/img/icons/favicon1.ico" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/aboutme.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Guidev | Portfólio</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <nav class="top-nav-content">
+            <div class="logo-header">
+                <img class="logo" src="./assets/img/guidev/logo-header.svg" alt="Logo Guilherme Paiva">
+                <img class="logo-scroll" src="./assets/img/guidev/logo-header-scroll.svg" alt="Logo Guilherme Paiva">
+            </div>
+            <div class="backdrop-menu">
+                <ul class="items-nav-links">
+                    <li>
+                        <ion-icon class="menu-mobile-icon close-button-menu" name="grid"></ion-icon>
+                    </li>
+                    <li>
+                        <a href="#go-aboutme">
+                            <ion-icon class="user-icon" name="person-sharp"></ion-icon>
+                            <span>Sobre mim</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#go-skills">
+                            <ion-icon class="hability-icon" name="sparkles-sharp"></ion-icon>
+                            <span>Habilidades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#go-projects">
+                            <ion-icon class="folder-icon" name="folder-sharp"></ion-icon>
+                            <span>Projetos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#go-contact">
+                            <ion-icon class="evelope-icon" name="mail"></ion-icon>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="input-toggle-theme" type="checkbox">
+                            <div class="icons-theme">
+                                <ion-icon class="light-icon-theme" name="sunny"></ion-icon>
+                                <ion-icon class="dark-icon-theme" name="moon"></ion-icon>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- menu-icon -->
+            <ion-icon class="menu-mobile-icon" name="grid"></ion-icon>
+        </nav>
+    </header>
+
+    <!---------------------- Home ---------------------->
+    <main class="home-container" id="go-home">
+        <div class="floating-icons">
+            <a href="#go-home">
+                <ion-icon class="back-home" name="chevron-up-outline"></ion-icon>
+            </a>
+            <a href="https://wa.me/5537998223255" target="_blank">
+                <img class="whatsapp-logo-bottom" src="./assets/img/icons/whatsapp-img.svg" alt="Whatsapp para contato">
+            </a>
+        </div>
+        <div class="info-box">
+            <span class="salutation-main">Seja bem-vindo(a), sou</span>
+            <h1 class="name-title-main">Guilherme Paiva</h1>
+            <h2 class="subtitle-main">&lt/Desenvolvedor Front-end Júnior&gt</h2>
+            <a href="./assets/pdf/curriculum.pdf" download="CV de Guilherme Paiva" class="btn-download-cv">Baixar
+                CV</a>
+            <div class="social-icons">
+                <a href="https://wa.me/5537998223255" target="_blank">
+                    <i class='whatsapp-icon bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://github.com/PaivaProgDev" target="_blank">
+                    <i class="github-icon fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-paiva-33b70521b/" target="_blank">
+                    <i class='linkedin-icon bx bxl-linkedin'></i>
+                </a>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class='bx bxl-jquery'></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <ion-icon name="logo-electron"></ion-icon>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class='bx bxl-jquery'></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <ion-icon name="logo-electron"></ion-icon>
+                    <i class="fa-brands fa-react"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Imagem de Guilherme Paiva -->
+        <div class="image-guidev-home">
+            <img src="./assets/img/guidev/home-image.png" alt="Foto de Guilherme Paiva">
+        </div>
+    </main>
+    <!---------------------- Section - Sobre mim ---------------------->
+    <section class="aboutme-container" id="go-aboutme">
+        <div class="aboutme-content">
+            <!-- Imagem de Guilherme Paiva -->
+            <div class="image-guidev-aboutme">
+                <h1 class="title-aboutme">Sobre mim</h1>
+                <img src="./assets/img/guidev/about-image.png" alt="Foto de Guilherme Paiva">
+            </div>
+            <!-- Tópico 1 -->
+            <div class="animate-reveal-aboutme">
+                <div class="header-topic-aboutme">
+                    <ion-icon name="person-sharp"></ion-icon>
+                    <span>Informações</span>
+                </div>
+                <p class="text-topic-aboutme">
+                    Tive meu primeiro contato com computadores aos 12 anos, e nisso, a área da tecnologia foi um
+                    marco para mim. Quando cheguei a certa idade, não tive dúvidas sobre qual caminho trilhar!
+                    Meu coração queima quando se fala de desenvolvimento web. Nada poderá tirar o que está dentro de
+                    mim, nasci para isso e nada
+                    mais!
+                    No momento estou em constante desenvolvimento em outras tecnologias, um programador
+                    nunca para de aprender.
+                </p>
+                <!-- Tópico 2 -->
+                <div class="header-topic-aboutme">
+                    <ion-icon name="thumbs-up-sharp"></ion-icon>
+                    <span>Qualidades</span>
+                </div>
+                <ul class="list-topic-aboutme">
+                    <li>
+                        - Dedicado
+                    </li>
+                    <li>
+                        - Organizado
+                    </li>
+                    <li>
+                        - Aprende rápido
+                    </li>
+                    <li>
+                        - Trabalho em equipes
+                    </li>
+                    <li>
+                        - Entusiasta com desafios
+                    </li>
+                    <li>
+                        - Ama aprender novas tecnologias
+                    </li>
+                </ul>
+
+                <!-- Tópico 3 -->
+                <div class="header-topic-aboutme">
+                    <ion-icon name="trending-up-sharp"></ion-icon>
+                    <span>Objetivos</span>
+                </div>
+                <p class="text-topic-aboutme">
+                    Trabalhar com foco no meu crescimento profissional e empresarial.
+                    Desejo trabalhar com as tecnologias apresentadas abaixo!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills-container" id="go-skills">
+        <h1 class="title-skills">Habilidades</h1>
+        <p class="info-cards-message">
+            <ion-icon class="info-icon" name="information-circle"></ion-icon>
+            Clique nos cards para mais informações
+        </p>
+        <!-- Cards -->
+        <div class="card-skills">
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/html-img.svg" alt="Imagem Html">
+                    </div>
+                    <span class="title-card">HTML</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos
+                        HTML podem ser interpretados por navegadores.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/css-img.svg" alt="Imagem Css">
+                    </div>
+                    <span class="title-card">CSS</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado
+                        diretamente nas tags HTML ou ficar contido dentro das tags.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/javascript-img.svg" alt="Imagem Javascript">
+                    </div>
+                    <span class="title-card">Javascript</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com
+                        tipagem dinâmica fraca e multiparadigma.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/jquery-img.svg" alt="Imagem Jquery">
+                    </div>
+                    <span class="title-card">Jquery</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        jQuery é uma biblioteca livre que contém funções da linguagem de programação JavaScript que
+                        interage com páginas em HTML, ele simplifica os scripts executados
+                        no navegador do usuário.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/bootstrap-img.svg" alt="Imagem Bootstrap">
+                    </div>
+                    <span class="title-card">Bootstrap</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de
+                        interface e front-end para sites e aplicações web, com o objetivo de melhorar o estilo da
+                        página.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/figma-img.svg" alt="Imagem Figma">
+                    </div>
+                    <span class="title-card">Figma</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente
+                        no navegador web
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/github-img.svg" alt="Imagem Github">
+                    </div>
+                    <span class="title-card">Github</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o
+                        Git.
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/sass-img.svg" alt="Imagem Sass">
+                    </div>
+                    <span class="title-card">Sass</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        “Syntactically Awesome Style Sheets”. O Sass é "uma linguagem de pré-processamento em folhas de
+                        estilos que é compilada para CSS.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="subtitle-skills">Tecnologias em desenvolvimento</h2>
+
+        <div class="card-skills-dev">
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <img src="./assets/img/icons/git-img.svg" alt="Imagem Git">
+                    </div>
+                    <span class="title-card">GIT</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de
+                        software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <ion-icon class="logo-react-skills" name="logo-react"></ion-icon>
+                    </div>
+                    <span class="title-card">React</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de
+                        usuário em páginas web.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+            <div class="flip-card">
+                <div class="card-front">
+                    <div class="card-img">
+                        <ion-icon class="logo-electron-skills" name="logo-electron"></ion-icon>
+                    </div>
+                    <span class="title-card">Electron</span>
+                </div>
+                <div class="card-back">
+                    <p>
+                        Electron é um framework de código aberto. Ele permite desenvolver aplicações para desktop GUI
+                        usando componentes front end e back
+                        end.
+                    </p>
+                </div>
+            </div>
+            <!-- ====================================== -->
+        </div>
+    </section>
+
+    <section class="projects-container" id="go-projects">
+        <div class="projects-content">
+            <h1 class="title-projects">projetos</h1>
+            <div class="projects card-reveal-animation">
+                <!-- ===== -->
+                <div class="card-modal modal-open" data-modal="modal1">
+                    <img class="img-card-modal" src="./assets/img/projects/project-portfolio.svg"
+                        alt="Prévia do projeto Portfólio">
+                    <div class="info-card-modal">
+                        <p class="title-card-modal">Clique para mais informações</p>
+                        <ion-icon class="icon-card-modal" name="chevron-forward-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <img class="img-projects" src="./assets/img/projects/project-portfolio.svg"
+                            alt="Prévia do projeto Portfólio">
+                        <div class="project-info-modal">
+                            <h5 class="title-info-modal">portfólio</h5>
+                            <p class="text-info-project">
+                                Meu portfólio, o primeiro "grande" projeto como desenvolvedor! Como foi incrível o
+                                experiência e os
+                                momentos que tive durante o planejamento e o desenvolvimento, foi um marco muito grande
+                                para mim.
+                                Logo esse portfólio vai estar lotado de projetos pessoais!
+                            </p>
+                            <div class="techs-used-project">
+                                <img src="./assets/img/icons/html-img.svg" alt="Imagem html">
+                                <img src="./assets/img/icons/css-img.svg" alt="Imagem css">
+                                <img src="./assets/img/icons/javascript-img.svg" alt="Imagem javascript">
+                            </div>
+                            <div class="btns-modal-project">
+                                <a href="https://github.com/PaivaProgDev/Paqueta-store" target="_blank">
+                                    <i class="github-icon-btn fa-brands fa-github"></i>
+                                    repositório
+                                </a>
+                                <a href="https://www.figma.com/file/HcTVPzmhDaW2WJKBxPu7U0/Portifolio?type=design&node-id=0%3A1&mode=design&t=14sziQpU5GwsCn0S-1"
+                                    target="_blank">
+                                    <ion-icon name="logo-figma"></ion-icon>
+                                    Protótipo
+                                </a>
+                            </div>
+                            <button class="btn-close-modal">X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== -->
+                <div class="card-modal modal-open" data-modal="modal2">
+                    <img class="img-card-modal" src="./assets/img/projects/project-petshop.svg"
+                        alt="Prévia do projeto Devpet">
+                    <div class="info-card-modal">
+                        <p class="title-card-modal">Clique para mais informações</p>
+                        <ion-icon class="icon-card-modal" name="chevron-forward-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <img class="img-projects" src="./assets/img/projects/project-petshop.svg"
+                            alt="Prévia do projeto Devpet">
+                        <div class="project-info-modal">
+                            <h2 class="title-info-modal">petshop</h2>
+                            <p class="text-info-project">
+                                Devpet é um e-commerce/landing page fictício, criado exclusivamente por mim, desde o
+                                nome, até o design e as ideias presentes
+                                no projeto. Totalmente simples e clean, fiz esse projeto quando tinha pouca
+                                experiência!
+                            </p>
+                            <div class="techs-used-project">
+                                <img src="./assets/img/icons/html-img.svg" alt="Imagem html">
+                                <img src="./assets/img/icons/css-img.svg" alt=" Imagem css">
+                                <img src="./assets/img/icons/javascript-img.svg" alt="Imagem javascript">
+                            </div>
+                            <div class="btns-modal-project">
+                                <a href="https://paivaprogdev.github.io/Petshop-Site/" target="_blank">
+                                    <ion-icon class="link-icon-btn" name="link-outline"></ion-icon>
+                                    abrir projeto
+                                </a>
+                                <a href="https://github.com/PaivaProgDev/Petshop-Site" target="_blank">
+                                    <i class="github-icon-btn fa-brands fa-github"></i>
+                                    repositório
+                                </a>
+                            </div>
+                            <button class="btn-close-modal">X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== -->
+                <div class="card-modal modal-open" data-modal="modal3">
+                    <img class="img-card-modal" src="./assets/img/projects/project-nails.svg"
+                        alt="Prévia do projeto Nail Design">
+                    <div class="info-card-modal">
+                        <p class="title-card-modal">Clique para mais informações</p>
+                        <ion-icon class="icon-card-modal" name="chevron-forward-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal" id="modal3">
+                    <div class="modal-content">
+                        <img class="img-projects" src="./assets/img/projects/project-nails.svg"
+                            alt="Prévia do projeto Nail Design">
+                        <div class="project-info-modal">
+                            <h2 class="title-info-modal">Nail Designer</h2>
+                            <p class="text-info-project">
+                                Meu segundo projeto! Desenvolvi essa landing page totalmente SIMPLES para minha esposa,
+                                nela mostrei alguns de seus trabalhos profissionais, e reels do Instagram. E também tem
+                                o seu
+                                charme... integrei uma API do Google maps com a localização do seu local de trabalho. Eu
+                                tinha muito pouco conhecimento sobre as tecnologias!
+                            </p>
+                            <div class="techs-used-project">
+                                <img src="./assets/img/icons/html-img.svg" alt="Imagem html">
+                                <img src="./assets/img/icons/css-img.svg" alt=" Imagem css">
+                                <img src="./assets/img/icons/javascript-img.svg" alt="Imagem javascript">
+                            </div>
+                            <div class="btns-modal-project">
+                                <a href="https://paivaprogdev.github.io/Landingpage-Manicure/" target="_blank">
+                                    <ion-icon class="link-icon-btn" name="link-outline"></ion-icon>
+                                    abrir projeto
+                                </a>
+                                <a href="https://github.com/PaivaProgDev/Landingpage-Manicure" target="_blank">
+                                    <i class="github-icon-btn fa-brands fa-github"></i>
+                                    repositório
+                                </a>
+                            </div>
+                            <button class="btn-close-modal">X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== -->
+                <div class="card-modal modal-open" data-modal="modal4">
+                    <img class="img-card-modal" src="./assets/img/projects/project-paqueta.svg"
+                        alt="Prévia do projeto Paquetá">
+                    <div class="info-card-modal">
+                        <p class="title-card-modal">Clique para mais informações</p>
+                        <ion-icon class="icon-card-modal" name="chevron-forward-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal" id="modal4">
+                    <div class="modal-content">
+                        <img class="img-projects" src="./assets/img/projects/project-paqueta.svg"
+                            alt="Prévia do projeto Paquetá">
+                        <div class="project-info-modal">
+                            <h5 class="title-info-modal">paquetá</h5>
+                            <p class="text-info-project">
+                                Uma landing page/e-commerce de moda masculina e feminina. É adaptável a qualquer
+                                device com 100% de responsividade, adquiri muita experiência neste projeto! Landing page
+                                desenvolvida e
+                                inspirada no desafio <a href="https://www.brchallenges.com/desafio/paqueta-calcados"
+                                    target="_blank">BrChallenges</a>.
+                            </p>
+                            <div class="techs-used-project">
+                                <img src="./assets/img/icons/html-img.svg" alt="Imagem html">
+                                <img src="./assets/img/icons/css-img.svg" alt="Imagem css">
+                                <img src="./assets/img/icons/javascript-img.svg" alt="Imagem javascript">
+                            </div>
+                            <div class="btns-modal-project">
+                                <a href="https://paivaprogdev.github.io/Paqueta-store/" target="_blank">
+                                    <ion-icon class="link-icon-btn" name="link-outline"></ion-icon>
+                                    abrir projeto
+                                </a>
+                                <a href="https://github.com/PaivaProgDev/Paqueta-store" target="_blank">
+                                    <i class="github-icon-btn fa-brands fa-github"></i>
+                                    repositório
+                                </a>
+                            </div>
+                            <button class="btn-close-modal">X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== -->
+                <div class="card-modal modal-open" data-modal="modal5">
+                    <img class="img-card-modal" src="./assets/img/projects/project-churras.svg"
+                        alt="Prévia projeto Churrascometro">
+                    <div class="info-card-modal">
+                        <p class="title-card-modal">Clique para mais informações</p>
+                        <ion-icon class="icon-card-modal" name="chevron-forward-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal" id="modal5">
+                    <div class="modal-content">
+                        <img class="img-projects" src="./assets/img/projects/project-churras.svg"
+                            alt="Prévia do projeto Churrasco">
+                        <div class="project-info-modal">
+                            <h5 class="title-info-modal">churrascômetro</h5>
+                            <p class="text-info-project">
+                                Churrascômetro calcula a média de quantidade de carnes, bebidas para adultos, e
+                                líquido para
+                                crianças. Ele é baseado na quantidade de pessoas e também na duração do churrasco!
+                                Inspirado e desenvolvido no curso de Desenvolvimento web Full Stack.
+                                (ProgramadorBR - Igor Oliveira)
+                            </p>
+                            <div class="techs-used-project">
+                                <img src="./assets/img/icons/html-img.svg" alt="Imagem html">
+                                <img src="./assets/img/icons/css-img.svg" alt="Imagem css">
+                                <img src="./assets/img/icons/javascript-img.svg" alt="Imagem javascript">
+                            </div>
+                            <div class="btns-modal-project">
+                                <a href="https://paivaprogdev.github.io/Churrascometro/" target="_blank">
+                                    <ion-icon class="link-icon-btn" name="link-outline"></ion-icon>
+                                    abrir projeto
+                                </a>
+                                <a href="https://github.com/PaivaProgDev/Churrascometro" target="_blank">
+                                    <i class="github-icon-btn fa-brands fa-github"></i>
+                                    repositório
+                                </a>
+                            </div>
+                            <button class="btn-close-modal">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-projects">
+                    <p>Novos projetos em breve...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container" id="go-contact">
+        <div class="form-content">
+            <h1 class="title-form">Contato</h1>
+            <fieldset class="fieldset-content">
+                <p class="message-form">Preencha o formulário para falar comigo!</p>
+                <!-- Static Forms -->
+                <form id="form" class="form-body" action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="honeypot" style="display:none">
+                    <input type="hidden" name="accessKey" value="8f7452c7-af25-49a2-86c5-060f85ef43e1">
+                    <input type="hidden" name="subject" value="Nova Mensagem - Portfólio" />
+                    <input type="hidden" name="redirectTo" value="https://paivaprogdev.github.io/Portfolio/thanks">
+                    <!-- == -->
+                    <div class="input-box">
+                        <div>
+                            <label class="input-label" for="name-form"></label>
+                            <ion-icon class="icon-form" name="person-sharp"></ion-icon>
+                            <input class="input-form required" type="text" id="name-form" name="name" required
+                                maxlength="60" placeholder="Digite seu nome" oninput="nameValid()">
+                        </div>
+                        <span class="message-required">O nome deve ter no mínimo 3 caracteres</span>
+                    </div>
+                    <!-- == -->
+                    <div class="input-box">
+                        <div>
+                            <label class="input-label" for="email-form"></label>
+                            <ion-icon class="icon-form" name="mail"></ion-icon>
+                            <input class="input-form required" type="email" id="email-form" name="email" required
+                                placeholder="Ensira seu email" oninput="emailValid()">
+                        </div>
+                        <span class="message-required">Digite um e-mail válido</span>
+                    </div>
+                    <!-- == -->
+                    <div class="input-box">
+                        <label class="input-label" for="message-form"><ion-icon class="icon-form"
+                                name="chatbubbles"></ion-icon></label>
+                        <textarea class="textarea-form required" id="message-form" name="message" cols="30" rows="10"
+                            required placeholder="Ensira sua mensagem"></textarea>
+                        <span class="message-required">Digite no mínimo 7 caractéres</span>
+                    </div>
+                    <!-- == -->
+                    <button class="btn-form-submit" type="submit">Enviar</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-one">
+                <div>
+                    <h5 class="title-navigation-footer">Navegação</h5>
+                    <div class="links-navigation-footer">
+                        <a href="#go-home">Início</a>
+                        <a href="#go-aboutme">Sobre mim</a>
+                        <a href="#go-skills">Habilidades</a>
+                        <a href="#go-projects">Projetos</a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="title-navigation-footer">Contatos sociais</h5>
+                    <div class="icons-footer">
+                        <a href="https://wa.me/5537998223255" target="_blank">
+                            <i class='whatsapp-icon bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://github.com/PaivaProgDev" target="_blank">
+                            <i class="github-icon fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/guilherme-paiva-33b70521b/" target="_blank">
+                            <i class='linkedin-icon bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-center">
+                <p class="copyright-text">© Portfólio - Paiva Dev - Todos os direitos reservados.</p>
+                <p class="credits-name">Desenvolvido por <a href="https://www.instagram.com/guipaiva.feu/">Guilherme
+                        Paiva</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Script padrão -->
+    <script src="./js/script.js"></script>
+
+    <!-- Script icones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/1cb87b56e0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

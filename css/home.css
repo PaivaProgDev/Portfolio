@@ -1,0 +1,258 @@
+/* --------------- Home--------------- */
+
+:root {
+    --color-title-main: linear-gradient(200deg, #04AFF8, #0457F8);
+    --btn-floating-home: #183153d7;
+    --btn-color-home: #fff;
+    --carousel-color-before: linear-gradient(to right, #ffffff, #ffffffd2, #ffffff21);
+    --carousel-color-after: linear-gradient(to left, #ffffff, #ffffffd2, #ffffff21);
+    --color-icons-carrousel: #3c516e;
+    --color-title: #3c516e;
+    --color-subtitle: rgb(85, 85, 85);
+    --bg-btn-cv: #fff;
+    --color-btn-cv: #3c516e;
+    --bg-btn-cv-hover: #3c516e;
+    --color-btn-cv-hover: #fff;
+    --bg-social-icons: #3c516e;
+    --color-social-icons: #fff;
+}
+
+/* Cores do modo dark*/
+.dark-mode:root {
+    --btn-floating-home: #fff;
+    --btn-color-home: #183153d7;
+    --carousel-color-before: linear-gradient(to right, #212529, #212529c7, #2125294b);
+    --carousel-color-after: linear-gradient(to left, #212529, #212529c7, #2125294b);
+    --color-icons-carrousel: #fff;
+    --color-title: #fff;
+    --color-subtitle: rgb(165, 165, 165);
+    --bg-btn-cv: #212529;
+    --color-btn-cv: #fff;
+    --bg-btn-cv-hover: #fff;
+    --color-btn-cv-hover: #000;
+    --bg-social-icons: #fff;
+    --color-social-icons: #000;
+}
+
+.home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh + 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.floating-icons {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-home {
+    background-color: var(--btn-floating-home);
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 7px 0 0 7px;
+    color: var(--btn-color-home);
+    animation: iconFloatingHome 3s infinite linear;
+}
+
+.whatsapp-logo-bottom {
+    width: 33px;
+    padding: 3px;
+    animation: iconsFloatingAnimate 3s infinite linear;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: #40c351;
+    border-radius: 7px 0 0 7px;
+}
+
+.floating-icons .whatsapp-logo-bottom:hover {
+    transform: scale(1.06);
+    transition: 0.2s ease-in-out;
+}
+
+
+@keyframes iconsFloatingAnimate {
+    0% {
+        background-color: #40c35100;
+    }
+
+    50% {
+        background-color: #40c351;
+    }
+
+    100% {
+        background-color: #40c35100;
+    }
+}
+
+.info-box {
+    font-family: var(--font-montserrat);
+    font-style: italic;
+    width: 50%;
+    visibility: hidden;
+}
+
+.salutation-main {
+    font-weight: 800;
+    font-size: 1.875rem;
+    letter-spacing: 1px;
+    color: var(--color-title);
+}
+
+.name-title-main {
+    background-image: var(--color-title-main);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: 5px 0;
+}
+
+.subtitle-main {
+    color: var(--color-subtitle);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Botão download cv */
+.btn-download-cv {
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 13px;
+    background-color: var(--bg-btn-cv);
+    color: var(--color-btn-cv);
+    letter-spacing: 1px;
+    border: solid 3px var(--color-btn-cv);
+    border-radius: 7px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-download-cv:hover {
+    background-color: var(--bg-btn-cv-hover);
+    color: var(--color-btn-cv-hover);
+}
+
+/* Icones sociais */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.whatsapp-icon,
+.linkedin-icon {
+    background-color: var(--bg-social-icons);
+    color: var(--color-social-icons);
+    font-size: 20px;
+    padding: 0.375rem;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.github-icon {
+    font-size: 33px;
+    color: var(--bg-social-icons);
+    transition: all .2s ease-in-out;
+}
+
+.whatsapp-icon:hover,
+.github-icon:hover,
+.linkedin-icon:hover {
+    transform: translateY(-5px);
+    transition: all .2s ease-in-out;
+}
+
+/* Carrossel infinito */
+@keyframes carousel {
+    100% {
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
+.carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    display: inline-block;
+    animation: carousel 25s linear infinite;
+    width: 100%;
+}
+
+.carousel-container:hover .carousel {
+    animation-play-state: paused;
+}
+
+.carousel i {
+    font-size: 30px;
+    color: var(--color-icons-carrousel);
+    height: 50px;
+    margin: 0 20px;
+}
+
+.carousel ion-icon {
+    font-size: 33px;
+    position: relative;
+    top: 5px;
+    color: var(--color-icons-carrousel);
+    margin: 0 20px;
+}
+
+/* Foto Guilherme Paiva */
+.image-guidev-home img {
+    width: 100%;
+    max-width: 32.25rem;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 950px) {
+    .home-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 110px 0;
+        gap: 20px;
+    }
+
+    .info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .name-title-main {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+
+
+
+    .carousel {
+        width: 100%;
+    }
+
+}

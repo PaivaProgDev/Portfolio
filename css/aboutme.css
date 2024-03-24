@@ -1,0 +1,96 @@
+/* --------------- About --------------- */
+
+:root {
+    --bg-aboutme: #3c516e;
+    --color-body-aboutme: #3c516e;
+    --letters-border-topic: #3c516e;
+    --letters-text: #fff;
+    --title-color: #fff;
+    --color-border-topic: #fff;
+}
+
+.dark-mode:root {
+    --color-body-aboutme: #212529;
+}
+
+.aboutme-container {
+    background-color: var(--color-body-aboutme);
+    padding: 100px 0;
+    font-family: var(--font-outfit);
+    color: var(--letters-text);
+    transition: 400ms ease-in-out;
+}
+
+.aboutme-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.image-guidev-aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-aboutme {
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: var(--font-montserrat);
+}
+
+.image-guidev-aboutme img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Tópicos */
+.header-topic-aboutme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--color-border-topic);
+    border-radius: 5px;
+    color: var(--letters-border-topic);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.header-topic-aboutme ion-icon {
+    font-size: 18px;
+}
+
+.text-topic-aboutme,
+.list-topic-aboutme {
+    width: 100%;
+    padding: 20px 12px;
+    color: var(--color-white);
+    list-style: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 880px) {
+    .aboutme-content {
+        flex-direction: column;
+    }
+
+    .image-guidev-aboutme img {
+        width: 100%;
+    }
+
+    .info-cards-message {
+        width: 100%;
+        text-align: center;
+    }
+}

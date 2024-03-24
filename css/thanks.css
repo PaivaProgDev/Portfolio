@@ -1,0 +1,55 @@
+/* --------------- Thanks --------------- */
+
+:root {
+    --color-primary: #1879e9;
+    --color-btn: #fff;
+}
+
+
+.container {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-outfit);
+}
+
+.title-thanks {
+    color: var(--color-primary);
+    font-weight: 400;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.btn-back {
+    margin: 30px 0 100px 0;
+    background-color: var(--color-primary);
+    padding: 10px;
+    color: var(--color-btn);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    letter-spacing: 0.7px;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    width: fit-content;
+}
+
+.btn-back:hover {
+    transform: translateY(-6px);
+}
+
+.arrow-icon {
+    font-size: 20px;
+}
+
+.img-page-thanks {
+    width: 100%;
+    max-width: 500px;
+}
